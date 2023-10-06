@@ -129,7 +129,7 @@ function inspection(){
 statusInterval = setInterval(dragonStatus, 500)
 function dragonStatus(){
     if (food > 75 && water > 75 && health > 75) {
-        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Normal.gif"
+        document.querySelector(".dragonStates").src="./Dragon Tamagotchi/Normal.gif"
         document.getElementsByClassName("alert")[0].innerHTML = "Je suis en pleine forme!";
         console.log("food > 75 && water > 75 && health > 75")
 
@@ -138,7 +138,7 @@ function dragonStatus(){
         console.log("food > 50 && water > 50 && health > 50")
 
     } else if (health < 50){
-        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Sick.gif"
+        document.querySelector(".dragonStates").src="./Dragon Tamagotchi/Sick.gif"
         document.getElementsByClassName("alert")[0].innerHTML = "Je me sens pas bien du tout...";
         health--;
         health--;
@@ -149,7 +149,7 @@ function dragonStatus(){
         console.log("health < 75")
 
     } else if (food < 50){
-        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Sad.gif"
+        document.querySelector(".dragonStates").src="./Dragon Tamagotchi/Sad.gif"
         document.getElementsByClassName("alert")[0].innerHTML = "J'ai faim...";
         health--;
         health--;
@@ -160,7 +160,7 @@ function dragonStatus(){
         console.log("Food < 75")
         
     } else if (water < 50){
-        document.querySelector(".dragonStates").src="Dragon Tamagotchi/Sad.gif"
+        document.querySelector(".dragonStates").src="./Dragon Tamagotchi/Sad.gif"
         document.getElementsByClassName("alert")[0].innerHTML = "J'ai vraiment soif...";
         health--;
         health--;
@@ -179,7 +179,7 @@ overInterval = setInterval(gameOver, 500)
 function gameOver(){
 
     if (health <= 0){
-        document.querySelector(".dragonStates").src="Dragon Tamagotchi/dragonGameOver.png"
+        document.querySelector(".dragonStates").src="./Dragon Tamagotchi/dragonGameOver.png"
         gameStart = "false";
         document.getElementsByClassName("alert")[0].innerHTML = "Game Over.";
         console.log("Game Over reached, shutting down game until restart.")

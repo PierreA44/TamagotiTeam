@@ -130,7 +130,7 @@ main {
 }
 
 .dragonGame {
-    background-image: url(/Divers/montagnes.png);
+    background-image: url(./Divers/montagnes.png);
     background-size: contain;
     border-radius: var(--myBorderRadius);
     text-align: center;
